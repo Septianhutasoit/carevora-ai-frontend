@@ -105,3 +105,7 @@ select:focus-visible {
 .border-primary {
   border-color: var(--primary);
 }
+html,
+body {
+  scroll-behavior: smooth;
+}
