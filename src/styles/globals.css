@@ -1,26 +1,107 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  /* Warna dasar halaman */
+  --background: #f9fafb;
+  /* senada dengan bg-gray-50 di Shell */
   --foreground: #171717;
+
+  /* Palet warna utama (Green) — pengganti default blue */
+  --primary: #16a34a;
+  /* green-600 */
+  --primary-hover: #15803d;
+  /* green-700 */
+  --primary-light: #f0fdf4;
+  /* green-50 */
+  --primary-ring: #22c55e;
+  /* green-500, dipakai untuk focus ring */
+
+  --border-color: #e5e7eb;
+  /* gray-200 */
+  --text-muted: #6b7280;
+  /* gray-500 */
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-light: var(--primary-light);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Catatan: auto dark-mode dari preferensi OS sengaja TIDAK diaktifkan.
+   Desain dashboard (sidebar & header putih) memakai tema light yang tetap,
+   supaya tidak bentrok saat user membuka di perangkat dark mode.
+   Kalau nanti ingin dark mode manual (lewat tombol di Navbar), gunakan
+   pendekatan class (mis. .dark) lewat next-themes, bukan media query ini. */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Konsistensi warna fokus (ring) di semua input/button agar match tema hijau */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--primary-ring);
+  border-radius: 0.375rem;
+}
+
+/* Scrollbar tipis & konsisten (opsional, mempercantik tampilan sidebar/menu panjang) */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d1d5db;
+  /* gray-300 */
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #9ca3af;
+  /* gray-400 */
+}
+
+/* Utility kecil kalau ingin memakai warna primary lewat class biasa,
+   tanpa harus hardcode green-600 di banyak tempat */
+.text-primary {
+  color: var(--primary);
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.bg-primary:hover {
+  background-color: var(--primary-hover);
+}
+
+.border-primary {
+  border-color: var(--primary);
 }

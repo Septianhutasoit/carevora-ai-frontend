@@ -3,8 +3,8 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { authService } from '@/services/auth';
-import { User } from '@/types';
+import { authService } from '../services/auth';
+import { User } from '../types';
 
 export function useAuth(requireAuth = true) {
     const [user, setUser] = useState<User | null>(null);
