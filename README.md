@@ -108,7 +108,3 @@ CareerMatch hadir sebagai solusi yang menggabungkan kekuatan **kecerdasan buatan
 | 📈 **Recommendation History** | PostgreSQL | Menyimpan riwayat untuk tracking perkembangan karier |
 
 ---
-
-## 🏗️ Arsitektur Sistem
-
-CareerMatch menerapkan arsitektur **microservices** yang memisahkan tanggung jawab setiap komponen. Arsitektur ini dinilai **aman dan solid** dari sudut pandang penguji Tugas Akhir maupun praktisi industri.
