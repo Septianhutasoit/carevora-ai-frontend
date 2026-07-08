@@ -7,13 +7,15 @@
   </p>
 
   <p align="center">
-    <a href="#-alur-kerja-komunikasi-data">Alur Kerja</a> •
-    <a href="#-tech-stack">Tech Stack</a> •
-    <a href="#-ai-ml-stack">AI/ML Stack</a> •
+    <a href="#-tentang-proyek">Tentang</a> •
+    <a href="#-tujuan-proyek">Tujuan</a> •
+    <a href="#-teknologi-yang-digunakan">Teknologi</a> •
     <a href="#-arsitektur-sistem">Arsitektur</a> •
+    <a href="#-alur-kerja-sistem">Alur Kerja</a> •
     <a href="#-quick-start">Quick Start</a> •
-    <a href="#-project-structure">Structure</a> •
-    <a href="#-api-endpoints">API</a>
+    <a href="#-struktur-proyek">Struktur</a> •
+    <a href="#-api-endpoints">API</a> •
+    <a href="#-tim-pengembang">Tim</a>
   </p>
 
   <p align="center">
@@ -48,79 +50,65 @@
 
 ---
 
-## 📖 Overview
+## 📖 Tentang Proyek
 
-**CareerMatch** adalah sistem rekomendasi karier berbasis **kecerdasan buatan (AI)** yang membantu pengguna menemukan jalur karier yang sesuai berdasarkan **skill yang dimiliki**. Sistem ini memanfaatkan teknologi **Natural Language Processing (NLP)** dan **semantic search** untuk mencocokkan kemampuan pengguna dengan kebutuhan industri.
+**CareerMatch** adalah sebuah platform rekomendasi karier berbasis kecerdasan buatan (AI) yang dikembangkan untuk membantu individu — baik mahasiswa, fresh graduate, maupun profesional — dalam menemukan jalur karier yang paling sesuai dengan kemampuan (skill) yang mereka miliki.
 
-### 🎯 Problem Statement
+Tidak seperti platform rekomendasi karier pada umumnya yang hanya mengandalkan pencocokan kata kunci (keyword matching), CareerMatch menggunakan pendekatan **semantic understanding** yang mampu memahami makna dan konteks dari setiap skill yang dimasukkan oleh pengguna.
 
-Banyak pencari kerja dan mahasiswa kesulitan menentukan jalur karier yang tepat karena:
+Sistem ini tidak hanya memberikan rekomendasi karier, tetapi juga memberikan panduan konkret mengenai **kesenjangan skill (skill gap)** yang perlu dipelajari oleh pengguna untuk mencapai karier impiannya. Dengan demikian, CareerMatch berfungsi sebagai asisten karier pintar yang membantu pengguna merencanakan langkah profesional mereka secara lebih terarah dan terukur.
 
-| Masalah | Dampak |
-|---------|--------|
-| ❌ Tidak tahu karier apa yang cocok | Kebingungan dalam menentukan langkah karir |
-| ❌ Keterampilan tidak terpetakan | Tidak sadar potensi yang dimiliki |
-| ❌ Informasi karier tersebar | Sulit mengetahui skill yang dibutuhkan |
-| ❌ Rekomendasi tidak personal | Saran yang diberikan terlalu generik |
+---
 
-### 💡 Our Solution
+## 🎯 Tujuan Proyek
 
-CareerMatch hadir dengan pendekatan **AI-First** yang mengubah cara pengguna menemukan karier melalui:
+### Tujuan Utama
 
-<div align="center">
-  
-| Capability | Technology | Business Value |
-|------------|------------|----------------|
-| 🔍 **Semantic Matching** | Fine-tuned BGE-small + FAISS | Mencocokkan skill dengan karier secara cerdas |
-| 🧠 **Vector Embeddings** | Sentence Transformers | Representasi skill dalam 384 dimensi |
-| 📊 **Skill Gap Analysis** | Set Intersection/Difference | Mengetahui skill yang perlu dipelajari |
-| ⚡ **Real-time** | FastAPI + NestJS | Respons cepat & interaktif |
-</div>
+| No | Tujuan | Penjelasan |
+|----|--------|------------|
+| 1 | **Membantu menemukan karier yang sesuai** | Berdasarkan skill yang dimiliki, mengurangi kebingungan dalam menentukan arah karier |
+| 2 | **Memberikan analisis skill gap** | Mengetahui secara spesifik skill yang sudah dikuasai dan yang perlu dipelajari |
+| 3 | **Rekomendasi personal dan akurat** | Memanfaatkan teknologi AI untuk rekomendasi yang tidak generik |
+| 4 | **Menyimpan riwayat rekomendasi** | Memungkinkan pengguna melacak perkembangan karier dari waktu ke waktu |
+
+### Tujuan Teknis
+
+| No | Tujuan | Penjelasan |
+|----|--------|------------|
+| 1 | **Arsitektur microservices** | Memisahkan tanggung jawab antar komponen untuk skalabilitas dan maintainability |
+| 2 | **Integrasi model AI** | Fine-tuned BGE-small untuk semantic matching antara skill dan karier |
+| 3 | **Sistem responsif** | Latensi rendah untuk pengalaman pengguna yang interaktif dan nyaman |
+
+---
+
+## 🧠 Mengapa Proyek Ini Dibuat?
+
+Proyek ini lahir dari keprihatinan terhadap banyaknya individu yang mengalami kesulitan dalam menentukan jalur karier yang tepat.
+
+### Masalah yang Dihadapi Pengguna
+
+| Masalah | Dampak | Contoh Kasus |
+|---------|--------|--------------|
+| ❌ **Ketidakjelasan arah karier** | Pengguna bingung menentukan langkah selanjutnya | Mahasiswa TI tidak tahu posisi apa yang cocok dengan skill-nya |
+| ❌ **Keterampilan tidak terpetakan** | Potensi diri tidak tergali secara maksimal | Fresh graduate tidak sadar bahwa skill-nya sesuai untuk posisi tertentu |
+| ❌ **Informasi karier tersebar** | Sulit mengakses informasi kebutuhan skill industri | Setiap lowongan mencantumkan persyaratan skill yang berbeda-beda |
+| ❌ **Rekomendasi generik** | Saran yang diberikan terlalu umum dan tidak personal | Platform lain memberikan rekomendasi berdasarkan keyword saja |
+| ❌ **Kurangnya analisis skill gap** | Pengguna tidak tahu apa yang harus dipelajari selanjutnya | Tidak ada panduan belajar yang terarah untuk mencapai karier tertentu |
+
+### Solusi yang Ditawarkan
+
+CareerMatch hadir sebagai solusi yang menggabungkan kekuatan **kecerdasan buatan (AI)** dan **analisis data** untuk memberikan rekomendasi karier yang personal, akurat, dan terarah.
+
+| Pendekatan | Teknologi | Manfaat untuk Pengguna |
+|------------|-----------|------------------------|
+| 🔍 **Semantic Matching** | Fine-tuned BGE-small + FAISS | Mencocokkan skill dengan kebutuhan karier secara cerdas, tidak sekadar keyword |
+| 🧠 **Vector Embeddings** | Sentence Transformers | Merepresentasikan skill dalam ruang vektor 384 dimensi untuk pengukuran kemiripan yang akurat |
+| 📊 **Skill Gap Analysis** | Set Intersection/Difference | Memberikan insight jelas tentang skill yang dikuasai dan yang perlu dipelajari |
+| ⚡ **Real-time Processing** | FastAPI + NestJS | Respons cepat dengan latensi rendah, pengalaman interaktif |
+| 📈 **Recommendation History** | PostgreSQL | Menyimpan riwayat untuk tracking perkembangan karier |
 
 ---
 
 ## 🏗️ Arsitektur Sistem
 
-CareerMatch menerapkan arsitektur **microservices** yang memisahkan tanggung jawab setiap komponen:
-
----
-
-## 🔄 Alur Kerja Komunikasi Data yang Konsisten
-
-Berikut ilustrasi skenario ketika pengguna mengklik tombol **"Cari Rekomendasi"** di Frontend:
-
-### 🚀 Step-by-Step Flow
-
-```mermaid
-sequenceDiagram
-    participant User as 👤 User
-    participant FE as Frontend (Next.js)
-    participant BE as Backend (NestJS)
-    participant AI as AI Service (FastAPI)
-    participant DB as Database (PostgreSQL)
-
-    User->>FE: Klik "Cari Rekomendasi"
-    FE->>BE: POST /recommendations (Header: JWT Token)
-    
-    BE->>DB: Query skill pengguna
-    DB-->>BE: ["PHP", "Laravel", "MySQL", "Docker"]
-    
-    BE->>BE: Gabungkan skill → "PHP, Laravel, MySQL, Docker"
-    BE->>AI: POST http://localhost:8000/recommend
-    
-    AI->>AI: Preprocessing (cleaning, tokenization)
-    AI->>AI: Generate vector embedding (BGE-small)
-    AI->>AI: Cosine Similarity vs career vectors
-    AI-->>BE: [{career: "Fullstack Dev", match: 89%}, ...]
-    
-    loop For each career
-        BE->>DB: Query skills required
-        DB-->>BE: ["PHP", "Laravel", "React", "Docker"]
-        BE->>BE: Set Intersection → "Sudah Dikuasai"
-        BE->>BE: Set Difference → "Perlu Dipelajari"
-    end
-    
-    BE->>DB: Simpan riwayat rekomendasi
-    BE-->>FE: JSON Response (structured data)
-    
-    FE->>User: Render hasil rekomendasi
+CareerMatch menerapkan arsitektur **microservices** yang memisahkan tanggung jawab setiap komponen. Arsitektur ini dinilai **aman dan solid** dari sudut pandang penguji Tugas Akhir maupun praktisi industri.
