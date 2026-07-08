@@ -5,49 +5,6 @@
   <p align="center">
     <strong>🧠 AI-Powered Career Recommendation System</strong>
   </p>
-
-  <p align="center">
-    <a href="#-tentang-proyek">Tentang</a> •
-    <a href="#-tujuan-proyek">Tujuan</a> •
-    <a href="#-teknologi-yang-digunakan">Teknologi</a> •
-    <a href="#-arsitektur-sistem">Arsitektur</a> •
-    <a href="#-alur-kerja-sistem">Alur Kerja</a> •
-    <a href="#-quick-start">Quick Start</a> •
-    <a href="#-struktur-proyek">Struktur</a> •
-    <a href="#-api-endpoints">API</a> •
-    <a href="#-tim-pengembang">Tim</a>
-  </p>
-
-  <p align="center">
-    <img src="https://img.shields.io/badge/Next.js-14+-000000?style=for-the-badge&logo=next.js&logoColor=white" />
-    <img src="https://img.shields.io/badge/NestJS-10+-E0234E?style=for-the-badge&logo=nestjs&logoColor=white" />
-    <img src="https://img.shields.io/badge/FastAPI-0.136+-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
-    <img src="https://img.shields.io/badge/TypeScript-5.0+-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
-    <img src="https://img.shields.io/badge/Tailwind_CSS-3.0+-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" />
-  </p>
-
-  <p align="center">
-    <img src="https://img.shields.io/badge/PyTorch-2.12+-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
-    <img src="https://img.shields.io/badge/Sentence_Transformers-5.5+-FFD700?style=for-the-badge&logo=huggingface&logoColor=black" />
-    <img src="https://img.shields.io/badge/FAISS-1.14+-EA6B6B?style=for-the-badge&logo=facebook&logoColor=white" />
-    <img src="https://img.shields.io/badge/Hugging_Face-2.2+-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" />
-    <img src="https://img.shields.io/badge/Transformers-5.9+-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" />
-  </p>
-
-  <p align="center">
-    <img src="https://img.shields.io/badge/PostgreSQL-15+-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
-    <img src="https://img.shields.io/badge/Pandas-2.0+-150458?style=for-the-badge&logo=pandas&logoColor=white" />
-    <img src="https://img.shields.io/badge/NumPy-1.24+-013243?style=for-the-badge&logo=numpy&logoColor=white" />
-    <img src="https://img.shields.io/badge/Docker-24.0+-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
-  </p>
-
-  <p align="center">
-    <img src="https://img.shields.io/badge/Status-Production_Ready-2E7D32?style=for-the-badge" />
-    <img src="https://img.shields.io/badge/License-MIT-3C873A?style=for-the-badge" />
-  </p>
-
-</div>
-
 ---
 
 ## 📖 Tentang Proyek
