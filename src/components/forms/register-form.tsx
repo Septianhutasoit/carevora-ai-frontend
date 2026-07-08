@@ -247,31 +247,6 @@ export default function RegisterForm() {
                     <div className="flex-1 h-px bg-gray-200" />
                 </div>
 
-                <button
-                    type="button"
-                    className="flex items-center justify-center w-full gap-2 py-2.5 text-gray-700 transition-colors border border-gray-300 rounded-lg hover:bg-gray-50"
-                >
-                    <svg className="w-4 h-4" viewBox="0 0 48 48">
-                        <path
-                            fill="#FFC107"
-                            d="M43.6 20.5H42V20H24v8h11.3C33.9 32.3 29.4 35 24 35c-6.1 0-11-4.9-11-11s4.9-11 11-11c2.8 0 5.3 1 7.3 2.7l6-6C33.6 6.5 29 4.5 24 4.5 13.2 4.5 4.5 13.2 4.5 24S13.2 43.5 24 43.5 43.5 34.8 43.5 24c0-1.2-.1-2.4-.3-3.5z"
-                        />
-                        <path
-                            fill="#FF3D00"
-                            d="M6.3 14.7l6.6 4.8C14.5 16 18.9 13 24 13c2.8 0 5.3 1 7.3 2.7l6-6C33.6 6.5 29 4.5 24 4.5c-7.7 0-14.3 4.4-17.7 10.2z"
-                        />
-                        <path
-                            fill="#4CAF50"
-                            d="M24 43.5c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 34.7 26.7 35.5 24 35.5c-5.3 0-9.8-3.6-11.4-8.4l-6.5 5C9.6 38.9 16.3 43.5 24 43.5z"
-                        />
-                        <path
-                            fill="#1976D2"
-                            d="M43.6 20.5H42V20H24v8h11.3c-.7 2-1.9 3.7-3.5 5l6.2 5.2C41.4 35.6 43.5 30.3 43.5 24c0-1.2-.1-2.4-.3-3.5z"
-                        />
-                    </svg>
-                    Daftar dengan Google
-                </button>
-
                 <p className="text-sm text-center text-gray-600">
                     Sudah punya akun?{" "}
                     <Link
