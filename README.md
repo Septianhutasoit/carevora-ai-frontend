@@ -3,7 +3,6 @@
   <p align="center">
     <strong>🧠 AI-Powered Career Recommendation System</strong>
   </p>
----
 
 ## 📖 Tentang Proyek
 
