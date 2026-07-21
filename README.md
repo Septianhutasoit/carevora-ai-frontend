@@ -1,7 +1,5 @@
 <div align="center">
   
-  <img src="https://readme-typing-svg.demolab.com?font=Plus+Jakarta+Sans&weight=700&size=40&duration=3000&pause=500&color=0F4C81&center=true&vCenter=true&random=false&width=500&height=70&lines=CareerMatch;AI-Powered+Career+Recommendation" alt="CareerMatch Title" />
-  
   <p align="center">
     <strong>🧠 AI-Powered Career Recommendation System</strong>
   </p>
